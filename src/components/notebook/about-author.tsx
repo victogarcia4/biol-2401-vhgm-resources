@@ -25,12 +25,11 @@ export function AboutAuthor() {
           <div className="mt-6 grid lg:grid-cols-[1fr_1.4fr] gap-6 lg:gap-10">
             {/* Portrait / avatar stand-in card */}
             <div className="nb-card p-6 flex flex-col items-center text-center">
-              <div
-                className="w-28 h-28 rounded-full border-2 border-[#1a1a1a] flex items-center justify-center bg-[#d4f873] text-4xl font-extrabold text-[#1a1a1a] shadow-[0_3px_0_#1a1a1a]"
-                aria-hidden
-              >
-                VG
-              </div>
+              <img
+                src="/VHGM traje azul.png"
+                alt="Dr. Victor Garcia Martinez"
+                className="w-28 h-28 rounded-full border-2 border-[#1a1a1a] object-cover object-top shadow-[0_3px_0_#1a1a1a]"
+              />
               <div className="mt-4 font-extrabold text-lg">Dr. Victor Garcia Martinez</div>
               <div className="text-sm text-[#666]">Assistant Professor</div>
               <div className="mt-2 nb-script text-xl text-[#3a7d2c]">Lone Star College</div>
