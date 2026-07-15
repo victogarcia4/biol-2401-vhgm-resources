@@ -17,7 +17,7 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "BIOL 2401 · A&P Resources — Dr. Victor Garcia Martinez",
+  title: "A&P Resources",
   description:
     "Anatomy & Physiology I (BIOL 2401) resource hub by Dr. Victor Garcia Martinez, Assistant Professor at Lone Star College. Pre-assessment infographics, flipped-classroom active learning, and post-assessment mini-apps.",
   keywords: [
@@ -31,6 +31,10 @@ export const metadata: Metadata = {
     "Active Learning",
   ],
   authors: [{ name: "Dr. Victor Garcia Martinez" }],
+  icons: {
+    icon: "/VHGM traje azul.png",
+    apple: "/VHGM traje azul.png",
+  },
   openGraph: {
     title: "BIOL 2401 · A&P Resources — Dr. Victor Garcia Martinez",
     description:
