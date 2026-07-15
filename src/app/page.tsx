@@ -12,7 +12,7 @@ const RESOURCES = [
     index: 1,
     stage: "Pre-assessment",
     kicker: "Entry 01 · Diagnostic",
-    title: "A&P — Presentación de Infografías",
+    title: "A&P — Infographics Presentations",
     blurb:
       "Visual infographics that surface what students already know before lecture. Built around HAPS Society for Learning Outcomes, each panel targets a foundational A&P I concept — body organization, cytology, histology, the integumentary system, and the skeletal & muscular systems.",
     bullets: [

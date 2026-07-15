@@ -62,6 +62,7 @@ export default function RootLayout({
         style={{
           background: "#f5f2e8",
           color: "#1a1a1a",
+          fontFamily: "var(--font-inter), system-ui, sans-serif",
         }}
       >
         {children}
