@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
-import { Inter, Caveat } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
-const inter = Inter({
+const inter = localFont({
+  src: "./fonts/Inter-Variable.woff2",
   variable: "--font-inter",
-  subsets: ["latin"],
   display: "swap",
 });
 
-const caveat = Caveat({
+const caveat = localFont({
+  src: [
+    { path: "./fonts/Caveat-Regular.ttf", weight: "400" },
+    { path: "./fonts/Caveat-Bold.ttf", weight: "700" },
+  ],
   variable: "--font-caveat",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
