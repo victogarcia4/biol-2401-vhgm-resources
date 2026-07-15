@@ -71,7 +71,7 @@ export default function Page() {
       <SpiralBinding />
 
       {/* Main content — offset to the right of the spiral + red margin line */}
-      <div className="relative z-10 pl-[60px] sm:pl-[80px] pr-0">
+      <div className="relative z-10 pl-[72px] sm:pl-[90px] pr-0">
         <TopBanner />
         <SiteHeader />
         <main>

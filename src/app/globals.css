@@ -159,14 +159,17 @@
   position: fixed;
   left: 0;
   top: 0;
-  width: 38px;
+  width: 52px;
   height: 100vh;
   z-index: 50;
   pointer-events: none;
   background:
-    /* punched holes / shadow strip */
-    linear-gradient(to right, rgba(0, 0, 0, 0.18) 0px, rgba(0, 0, 0, 0.04) 18px, transparent 38px),
-    /* page-edge shadow */ linear-gradient(to right, #e8e4d4 0px, #f1ede0 24px, #f5f2e8 38px);
+    linear-gradient(to right,
+      #c8c3b4 0px,
+      #dedad0 10px,
+      #eae6da 28px,
+      #f5f2e8 52px
+    );
 }
 
 .nb-spiral__loops {
@@ -175,21 +178,22 @@
   width: 100%;
   height: 100%;
   background-repeat: repeat-y;
-  background-position: 4px -6px;
-  background-size: 30px 32px;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='32' viewBox='0 0 30 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='0'><stop offset='0' stop-color='%237a7a7a'/><stop offset='0.45' stop-color='%23cfcfcf'/><stop offset='0.55' stop-color='%23e6e6e6'/><stop offset='1' stop-color='%238a8a8a'/></linearGradient></defs><g><ellipse cx='15' cy='14' rx='11' ry='7' fill='none' stroke='url(%23g)' stroke-width='3.2'/><ellipse cx='15' cy='14' rx='11' ry='7' fill='none' stroke='rgba(0,0,0,0.35)' stroke-width='0.6'/><ellipse cx='15' cy='14' rx='8.5' ry='5' fill='none' stroke='rgba(255,255,255,0.65)' stroke-width='0.9'/><circle cx='15' cy='14' r='2.4' fill='rgba(0,0,0,0.18)'/></g></svg>");
+  background-position: 4px 0px;
+  background-size: 48px 44px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='44' viewBox='0 0 48 44'><defs><linearGradient id='body' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23e8e8e8'/><stop offset='0.25' stop-color='%23d0d0d0'/><stop offset='0.5' stop-color='%23b8b8b8'/><stop offset='0.75' stop-color='%23a0a0a0'/><stop offset='1' stop-color='%23888888'/></linearGradient><linearGradient id='shine' x1='0' y1='0' x2='1' y2='0'><stop offset='0' stop-color='%23606060'/><stop offset='0.3' stop-color='%23c0c0c0'/><stop offset='0.5' stop-color='%23f0f0f0'/><stop offset='0.7' stop-color='%23d0d0d0'/><stop offset='1' stop-color='%23707070'/></linearGradient><radialGradient id='hole' cx='50%' cy='50%' r='50%'><stop offset='0' stop-color='%23202020'/><stop offset='0.6' stop-color='%23484848'/><stop offset='1' stop-color='%23707070'/></radialGradient></defs><!-- outer ring shadow --><ellipse cx='24' cy='22' rx='18' ry='10' fill='none' stroke='%23555' stroke-width='1' opacity='0.4'/><!-- ring body --><ellipse cx='24' cy='22' rx='17' ry='9.5' fill='none' stroke='url(%23shine)' stroke-width='6.5'/><!-- inner bright highlight arc top --><path d='M 9 18 Q 24 11 39 18' fill='none' stroke='%23ffffff' stroke-width='1.8' opacity='0.85' stroke-linecap='round'/><!-- inner dark shadow arc bottom --><path d='M 9 26 Q 24 33 39 26' fill='none' stroke='%23333333' stroke-width='1.4' opacity='0.55' stroke-linecap='round'/><!-- center hole --><ellipse cx='24' cy='22' rx='7' ry='4' fill='url(%23hole)'/><!-- hole highlight --><ellipse cx='22' cy='20.5' rx='2.5' ry='1.2' fill='%23ffffff' opacity='0.25'/><!-- bottom cast shadow --><ellipse cx='24' cy='31.5' rx='14' ry='2.5' fill='%23000000' opacity='0.12'/></svg>");
 }
 
 /* Mobile — slimmer spiral */
 @media (max-width: 640px) {
   .nb-spiral {
-    width: 26px;
+    width: 36px;
   }
   .nb-paper::before {
     left: 38px;
   }
   .nb-spiral__loops {
-    background-size: 22px 24px;
+    background-size: 34px 32px;
+    background-position: 2px 0px;
   }
 }
 
