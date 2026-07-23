@@ -6,6 +6,7 @@ type Accent = "red" | "lime";
 
 export interface ResourceStageProps {
   index: number;
+  totalStages?: number;
   stage: string;
   kicker: string;
   title: string;
@@ -19,14 +20,14 @@ export interface ResourceStageProps {
 }
 
 /**
- * ResourceStage — one large notebook entry for each of the three course stages.
+ * ResourceStage — one large notebook entry for each course stage.
  *
  * Layout: big numbered lime circle on the left, white card with washi tape on
  * top containing the stage title, blurb, bullet list, platform tag, and CTA.
  * Optional sticky note decoration in the corner.
  */
 export function ResourceStage(props: ResourceStageProps) {
-  const { index, stage, kicker, title, blurb, bullets, platform, href, cta, accent, rotation } =
+  const { index, totalStages = 4, stage, kicker, title, blurb, bullets, platform, href, cta, accent, rotation } =
     props;
 
   const accentTag = accent === "red" ? "nb-tag--red" : "nb-tag--lime";
@@ -67,7 +68,7 @@ export function ResourceStage(props: ResourceStageProps) {
         {/* Right: content */}
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-2 flex-wrap">
-            <span className={`nb-tag ${accentTag}`}>Stage {index} of 3</span>
+            <span className={`nb-tag ${accentTag}`}>Stage {index} of {totalStages}</span>
             <span className="nb-tag">
               Hosted on {platform}
             </span>

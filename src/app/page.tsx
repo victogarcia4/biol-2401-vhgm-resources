@@ -113,7 +113,7 @@ export default function Page() {
 
               <div className="grid gap-8 md:gap-10">
                 {RESOURCES.map((r) => (
-                  <ResourceStage key={r.index} {...r} />
+                  <ResourceStage key={r.index} {...r} totalStages={RESOURCES.length} />
                 ))}
               </div>
             </div>
