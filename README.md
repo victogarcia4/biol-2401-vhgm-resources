@@ -1,6 +1,6 @@
 # BIOL 2401 · A&P Resource Hub
 
-A single landing page that consolidates the three Anatomy & Physiology I (BIOL 2401)
+A single landing page that consolidates the four Anatomy & Physiology I (BIOL 2401)
 resources built by **Dr. Victor Garcia Martinez**, Assistant Professor at Lone Star College.
 
 The visual style is a **green spiral-bound notebook** — matte-silver spiral binding on the
@@ -9,7 +9,8 @@ yellow highlighter swipes, and lime-green CTAs.
 
 | Stage | Resource | URL |
 |---|---|---|
-| Pre-assessment | A&P — Presentación de Infografías | https://dr-garcia-m-haps-slo.vercel.app/ |
+| Pre-assessment | BIOL 2401 — Pre-Assessment Generator | https://biol2401-pre-assessment-generator.vercel.app/ |
+| Infographics | A&P — Presentación de Infografías | https://dr-garcia-m-haps-slo.vercel.app/ |
 | Active Learning | BIOL 2401 — Flipped Classroom | https://biol2401-flipped-classroom.netlify.app/ |
 | Post-assessment | A&P1 — Mini-apps | https://mini-ap1-apps.vercel.app/ |
 

@@ -10,21 +10,28 @@ export function HowToUse() {
       n: 1,
       title: "Run the pre-assessment",
       body:
-        "Open the infographics app the week before a new unit begins. Skim each panel and note which concepts already feel familiar — and which are brand new. This is diagnostic, not graded.",
+        "Open the pre-assessment tool the week before a new unit starts to test prior knowledge and baseline understanding. This is diagnostic, not graded.",
       tag: "Week 0",
     },
     {
       n: 2,
-      title: "Show up to the flipped class",
+      title: "Review the infographics",
       body:
-        "The flipped-classroom app holds your pre-class primers and in-class activities. Complete the pre-class work, then come ready to apply it — class time is for practice, not lecture.",
-      tag: "Each unit",
+        "Explore visual infographics aligned with HAPS SLOs to visualize foundational A&P I concepts before lectures.",
+      tag: "Pre-class",
     },
     {
       n: 3,
+      title: "Show up to the flipped class",
+      body:
+        "The flipped-classroom app holds your pre-class primers and in-class activities. Complete pre-class work and come ready to apply it during face-to-face time.",
+      tag: "Each unit",
+    },
+    {
+      n: 4,
       title: "Drill with the mini-apps",
       body:
-        "After each unit, return to the mini-apps for self-paced drill practice. Aim for short, frequent sessions — three 15-minute runs beat one 45-minute cram the night before the exam.",
+        "After each unit, return to the mini-apps for self-paced drill practice. Short, frequent sessions beat one cram night before the exam.",
       tag: "Before exams",
     },
   ];
@@ -34,11 +41,11 @@ export function HowToUse() {
       <div className="max-w-6xl mx-auto">
         <p className="nb-eyebrow mb-2">How to use this pack · P. 03</p>
         <h2 className="text-3xl sm:text-4xl font-extrabold mb-8">
-          Three steps, <span className="nb-underline-doodle">one rhythm</span>
+          Four steps, <span className="nb-underline-doodle">one rhythm</span>
         </h2>
 
         <div className="nb-card p-6 sm:p-8">
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {steps.map((s) => (
               <div key={s.n} className="relative">
                 <div className="flex items-center gap-3 mb-3">

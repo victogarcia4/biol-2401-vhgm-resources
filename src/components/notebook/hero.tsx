@@ -29,7 +29,8 @@ export function Hero() {
 
           <p className="mt-6 max-w-2xl text-base sm:text-lg text-[#333] leading-relaxed">
             A single home for everything BIOL 2401 — the{" "}
-            <span className="nb-highlight">pre-assessment infographics</span>, the{" "}
+            <span className="nb-highlight">pre-assessment generator</span>, the{" "}
+            <span className="nb-highlight">infographics presentations</span>, the{" "}
             <span className="nb-marker">flipped-classroom active-learning cycle</span>, and the{" "}
             <span className="nb-highlight">post-assessment mini-apps</span>. Built by Dr. Victor
             Garcia Martinez for Lone Star College students.
@@ -50,10 +51,10 @@ export function Hero() {
             </a>
           </div>
 
-          {/* Stat row — three quick numbers from the course */}
+          {/* Stat row — four quick numbers from the course */}
           <div className="mt-10 grid grid-cols-3 gap-3 sm:gap-4 max-w-2xl">
             {[
-              { n: "3", l: "Stages of practice" },
+              { n: "4", l: "Stages of practice" },
               { n: "1", l: "Flipped-classroom cycle" },
               { n: "100%", l: "Free & open access" },
             ].map((s) => (
@@ -76,7 +77,7 @@ export function Hero() {
           className="hidden lg:block absolute right-2 top-12 w-44"
         >
           <span className="block text-lg leading-tight">
-            Tip: pre-assessment first, then flipped class, then mini-apps.
+            Tip: pre-assessment first, then infographics, flipped class, &amp; mini-apps.
           </span>
         </StickyNote>
 

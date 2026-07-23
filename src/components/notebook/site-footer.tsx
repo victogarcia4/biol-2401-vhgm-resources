@@ -12,12 +12,20 @@ export function SiteFooter() {
         <div className="flex items-center gap-5 flex-wrap text-sm">
           <span className="font-bold">BIOL 2401 · A&amp;P I</span>
           <a
-            href="https://dr-garcia-m-haps-slo.vercel.app/"
+            href="https://biol2401-pre-assessment-generator.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#d4f873] transition-colors"
           >
             Pre-assessment ↗
+          </a>
+          <a
+            href="https://dr-garcia-m-haps-slo.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#d4f873] transition-colors"
+          >
+            Infographics ↗
           </a>
           <a
             href="https://biol2401-flipped-classroom.netlify.app/"
